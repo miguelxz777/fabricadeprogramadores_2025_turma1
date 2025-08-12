@@ -1,28 +1,17 @@
-def while1():
-    x=50
-    while x<=100:
-        print(x)
-        x = x + 1
-#while1()
-
-def while2():
-    x=1
-    while x<=100:
-        print(x)
-        x = x + 1
-#while2()
-def contagem_regressiva():
-    x = 10
-    while x >=1:
-        print(x)
-        x = x - 1
-    print("fogo")
-#contagem_regressiva()
-def whilw_while():
-    fim=int(input("digite o ultimo numero a imprimir:"))
-    x = 0
+def tabuada():
+    n = int(input("tabuada de:"))
+    fim = int(input("digitiate o fim:"))
+    x = 1
     while x <= fim:
-        if x % 2 == 1:
-            print(x)
-        x = x + 1
-whilw_while()
+        print(n, "x", "=", n*x)
+        x=x+1
+#tabuada()
+def while00():
+    s=0
+    while True:
+        v=int(input("digite um numero a somar ou 0 para sair:"))
+        if v==0:
+            break
+        s = s+v
+    print(s)
+while00()
